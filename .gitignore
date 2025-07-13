@@ -1,0 +1,9 @@
+# Ignore unnecessary folders
+venv/
+data/
+.env
+
+# Optional: Ignore other common files
+__pycache__/
+*.pyc
+.DS_Store
