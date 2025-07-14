@@ -52,7 +52,7 @@ if not is_stationary:
 print("\n=== Method 1: Manual ARIMA(1,1,1) ===")
 try:
     # ARIMA(p,d,q) where p=AR order, d=differencing, q=MA order
-    model_manual = ARIMA(train, order=(1,1,1))
+    model_manual = ARIMA(train, order=(1,0,1))
     model_fit_manual = model_manual.fit()
     
     print(model_fit_manual.summary())
